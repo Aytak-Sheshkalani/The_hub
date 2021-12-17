@@ -34,8 +34,8 @@ html {
 
 .img-left,
 .img-right {
-  width: 300;
-  height: 300;
+  width: 250px;
+  height: 250px;
   margin-left: 25;
   border-radius: 8px;
   display: block;
@@ -80,12 +80,31 @@ html {
   padding: 10px;
   flex: 50%;
 }
+figure {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
 
+.event-fig figure img {
+	-webkit-transition: .3s ease-in-out;
+	transition: .4s ease-in-out;
+  
+}
+.event-fig figure:hover img {
+	transform:  scale(1.3);
+}
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 
 @media (max-width: 800px) {
-  .events-image-left,
-  .events-image-left {
+  .events-image-left,.events-image-right {
     flex: 100%;
   }
 }
