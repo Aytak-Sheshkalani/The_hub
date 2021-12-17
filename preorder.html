@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Hub Cafe and Lounge</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="preOrder.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html"><img src="images/logo.png" alt="logo" id="logo" /></a>
+        <div class="topnav" id="topNav">
+          <a href="menu.html">MENU</a>
+          <a href="events.html" >EVENTS</a>
+          <a href="preorder.html" class="active">PRE-ORDER</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="handleBurger()">
+            <div id="nav-icon2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </div>      
+        <!-- <img src="images/logo.png" alt="logo" id="logo">
+        <ol type="a">
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="preorder.html">PRE-ORDER</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ol> -->
+    </nav>
+    <p style="text-align: center; font-size: 50px; color: blue;">Pre-order Menu</p>
+
+    <div class="box" style="float: left;">
+        <div class="contentt" style="background-color: yellow;">
+            <h2 style="font-size: 40px;">Pre-order Menu</h2>
+            <p style="font-size: 30px;">Many people say a great breakfast is the most important meal of the day. Now you can pair one of our delicious breakfast options with a cold or hot drink everyday between 7am and 9am </p>
+        </div>
+    </div>
+
+
+
+    <main>
+
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+                <h2>Menu</h2>
+                <p>Click an item to add it to your order.</p>
+                <h2>Drinks</h2>
+                <ul>
+                    <li>
+                        <a href="#"><img id="images/coffee_info.jpg" class="mainImg" src="images/coffee.jpg" alt="Coffee" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/espresso_info.jpg" class="mainImg" src="images/espresso.jpg" alt="Espresso" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/cappuccino_info.jpg" class="mainImg" src="images/cappuccino.jpg" alt="Cappuccino" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/latte_info.jpg" class="mainImg" src="images/latte.jpg" alt="Latte" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/juice_info.jpg" class="mainImg" src="images/juice.jpg" alt="Juice" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/fountainPop_info.jpg" class="mainImg" src="images/fountainPop.jpg" alt="Fountain Pop" /></a>
+                    </li>
+
+                    <h2>Breakfast Items</h2>
+
+                    <li>
+                        <a href="#"><img id="images/sausageEgg_info.jpg" class="mainImg" src="images/sausageEgg.jpg" alt="Sausage Egg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/baconEgg_info.jpg" class="mainImg" src="images/baconEgg.jpg" alt="Bacon Egg" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/breakfastWrap_info.jpg" class="mainImg" src="images/breakfastWrap.jpg" alt="Breakfast Wrap" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/westernOmelet_info.jpg" class="mainImg" src="images/westernOmelet.jpg" alt="Western Omelet" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/eggBenedict_info.jpg" class="mainImg" src="images/eggBenedict.jpg" alt="Egg Benedict" /></a>
+                    </li>
+                    <li>
+                        <a href="#"><img id="images/eggsOverEsay_info.jpg" class="mainImg" src="images/eggsOverEsay.jpg" alt="Eggs Over Esay" /></a>
+                    </li>
+
+                </ul>
+            </section>
+
+            <section>
+                <h2>Your Order</h2>
+                <section>
+                    <select id="order" name="order" size="6">
+            		</select>
+                    <p id="total">&nbsp;</p>
+                </section>
+                <section id="buttons">
+                    <input type="button" name="place_order" id="place_order" value="Place Order">
+                    <input type="button" name="clear_order" id="clear_order" value="Clear Order">
+                </section>
+            </section>
+
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="393" height="248" id="gmap_canvas" src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Address:</h3>
+                <p>
+                    <ion-icon class="social-icon" name="location-outline"></ion-icon>
+                    108 University Ave, Waterloo, ON N2J 2W2
+                    <br />
+                    <ion-icon class="social-icon" name="call-outline"></ion-icon>
+                    +1 5197485131
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <h3>Social accounts:</h3>
+            <a href="#instagram">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="logo-instagram"></ion-icon> Instagram
+                </div>
+            </a>
+            <a href="#facebook">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="logo-facebook"></ion-icon> Facebook
+                </div>
+            </a>
+            <a href="#email">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+                </div>
+            </a>
+        </div>
+        <div class="page-links">
+            <h3>Explore:</h3>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about us">About Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="preOrder.js"></script>
+    <script src="./navbar.js" ></script>
+</body>
+
+</html>

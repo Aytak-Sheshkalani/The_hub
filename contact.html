@@ -1,0 +1,135 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="contactstyles.css">
+      <link rel="icon" href="images/favicon.ico">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,700&display=swap"
+         rel="stylesheet">
+      <title>The Hub Cafe and Lounge</title>
+   </head>
+   <body>
+      <nav>
+         <a href="home.html"><img src="images/logo.png" alt="logo" id="logo" /></a>
+         <div class="topnav" id="topNav">
+           <a href="menu.html">MENU</a>
+           <a href="events.html" >EVENTS</a>
+           <a href="preorder.html">PRE-ORDER</a>
+           <a href="contact.html" class="active">CONTACT</a>
+           <a href="javascript:void(0);" class="icon" onclick="handleBurger()">
+             <div id="nav-icon2">
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+               <span></span>
+             </div>
+           </a>
+         </div>  
+         <!-- <img src="images/logo.png" width="300" height="200">
+         <ol type="a">
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="preorder.html">PRE-ORDER</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+         </ol> -->
+      </nav>
+      <div id= "image">
+         <img src="images\171026-better-coffee-boost-se-329p.jpg" width="1250" height="500" style="width: 100%;">
+      </div>
+      <div class="image-textarea">
+          <div id="textarea">
+             <textarea  cols="80" rows="20"disabled>
+             ABOUT US:
+             We are a group of students who were displeased with the lack of food and coffee options at the campus and that we banded together to create the Hub as a solution to the caffeine and food issue. 
+             The different cuisines available in our restaurants clearly mentioned on the page so that customers can easily understand specialization.
+             Here at "The Hub", our goal is to provide students with the fuel they need to be successful while in the class room. Whether it's as simple as a black coffee or as hearty as a steak sandwich,
+             we've got you covered.                      
+             Our coffee hub located in the 108 University AVE, Waterloo, Ontario N2J 2W2.
+             The address and contact number or any other details about contact has included on the page.</textarea>
+          </div>
+          <div id="img">
+             <img src="images\newpic.jpg" width = "630" height = "200" style="max-width:100%;height: auto;"float: right;">
+          </div>
+      </div>
+      <div class="mapouter1">
+          <div class="gmap_canvas1"><iframe width="550" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"frameborder="5" scrolling="no" marginheight="0" marginwidth="0" float: "left"></iframe>
+          </div>
+          <div id="container">
+             <label for="subject">Subject:</label>
+             <div>
+                <input type="text" id="subject" size="40">
+             </div>
+             <label for="name">Your Name:</label>
+             <div>
+                <input type="text" id="name" size="40">
+             </div>
+             <label for="email address">Email Address:</label>
+             <div>
+                <input type="text" id="email address" size="40">
+             </div>
+             <label for="details">Details:</label>
+             <div>
+                <textarea cols="40" rows='6'></textarea>
+             </div>
+             <a href = "index.html"><button>Submit</button></a>
+          </div>
+      </div>
+      <footer>
+         <div class="map">
+         <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="393" height="248" id="gmap_canvas"
+               src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"
+               frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            </div>
+         </div>
+         <div>
+            <h3>Address:</h3>
+            <p>
+               <ion-icon class="social-icon" name="location-outline"></ion-icon>
+               108 University Ave, Waterloo, ON N2J 2W2
+               <br />
+               <ion-icon class="social-icon" name="call-outline"></ion-icon>
+               +1 5197485131
+            </p>
+         </div>
+         <div class="social">
+            <h3>Social accounts:</h3>
+            <a href="#instagram">
+               <div class="social-item">
+                  <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                  Instagram
+               </div>
+            </a>
+            <a href="#facebook">
+               <div class="social-item">
+                  <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                  Facebook
+               </div>
+            </a>
+            <a href="#email">
+               <div class="social-item">
+                  <ion-icon class="social-icon" name="mail-outline"></ion-icon>
+                  Email
+               </div>
+            </a>
+         </div>
+         <div class="page-links">
+            <ul>
+               <li><a href="#menu">Menu</a></li>
+               <li><a href="#events">Events</a></li>
+               <li><a href="#about us">About Us</a></li>
+            </ul>
+         </div>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+      <script src="./navbar.js" ></script>
+</body>
+</html>

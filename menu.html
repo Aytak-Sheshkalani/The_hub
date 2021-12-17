@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menustyles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <title>The Hub Cafe and Lounge</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="home.html"><img src="images/logo.png" alt="logo" id="logo" /></a>
+        <div class="topnav" id="topNav">
+          <a href="menu.html" class="active">MENU</a>
+          <a href="events.html" >EVENTS</a>
+          <a href="preorder.html">PRE-ORDER</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="javascript:void(0);" class="icon" onclick="handleBurger()">
+            <div id="nav-icon2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </a>
+        </div>  
+    <!-- <a href="home.html"><img src="images/logo.png" alt="logo" id="logo"></a>
+        <ol type="a">
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="preorder.html">PRE-ORDER</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ol> -->
+    </nav>
+
+    <div class="row">
+        <div class="col-12">
+            <h1 id="title">MENU</h1>
+            <div id="menu">
+                <a href="#drinks"><img src="images/beverages.jpg" alt="Beverages"></a>
+                <a href="#brekkie"> <img src="images/breakfast.jpg" alt="Breakfast"></a>
+                <a href="#lunch"><img src="images/lunch.jpg" alt="Lunch"></a>
+                <a href="#healthy"><img src="images/healthy.jpg" alt="Healthy"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-3">&nbsp;</div>
+            <div class="col-6">
+                <div id="menuintro">
+                    <p>
+                        Here at <b>The Hub</b>, our goal is to provide students with the fuel they need to be
+                        successful
+                        while in the class room. Whether it's as simple as a black coffee or as hearty as a steak
+                        sandwich,
+                        we've got you covered.<br>
+                        In a hurry? We offer pre-order and pick up between 7am and 9am for all drinks and breakfast
+                        menu
+                        items.
+                        Simply jump over to our <a href="preorder.html">Pre-Order</a> section and make your morning
+                        easier!
+                    </p>
+                </div>
+            </div>
+            <div class="col-3">&nbsp;</div>
+        </div>
+        <hr width="50%">
+        <div class="row">
+            <div class="col-3">&nbsp;</div>
+            <div class="col-3">
+                <div class="card"><img src="images/drinks.gif" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="info_img"><img src="images/Menu Cards/coffee.png" alt="" id="ethical"></div>
+                <br><br>
+                <div class="content">The Hub is proud to annouce that we have recently upgraded our choice
+                    of beans and are now offering Ethical Bean Coffee. Not only does Ethical Bean produce a
+                    beautiful
+                    and complex
+                    flavor of coffee, they are also fair trade and focused on sustainability!
+                </div>
+            </div>
+            <div class="col-3">&nbsp;</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><small><a href="#logo">Back To Top</a></small></div>
+        </div>
+
+        <hr width="50%">
+        <div class="row">
+            <div class="col-3">&nbsp;</div>
+            <div class="col-3">
+                <div class="card"><img src="images/brekkie.gif" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="info_img"><img src="images/Menu Cards/burnbrae.gif" alt="" id="eggs"></div>
+                <br><br>
+                <div class="content">When we make our breakfast we aren't yolking around!
+                    We use only farm fresh eggs from our partners at Burnbrae Farms. Burnbrae
+                    provides us with amazing quality eggs that not only taste good, but are
+                    good for you!
+                </div>
+            </div>
+            <div class="col-3">&nbsp;</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><small><a href="#logo">Back To Top</a></small></div>
+        </div>
+        <hr width="50%">
+        <div class="row">
+            <div class="col-3">&nbsp</div>
+            <div class="col-3">
+                <div class="card"><img src="images/lunch.gif" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="info_img"><img src="images/Menu Cards/ace.png" alt="" id="buns"></div>
+                <br><br>
+                <div class="content">
+                    They say that the beginning of the a good sandwich is
+                    choosing your bun. Here at The Hub, we have made all the tough decisions
+                    for you. We proudly offer Ace Bakery Buns. They're soft, they're fluffy,
+                    they're an all around good time! Try one of our sammies!
+                </div>
+            </div>
+            <div class="col-3">&nbsp;</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><small><a href="#logo">Back To Top</a></small></div>
+        </div>
+        <hr width="50%">
+        <div class="row">
+            <div class="col-3">&nbsp;</div>
+            <div class="col-3">
+                <div class="card"><img src="images/healthy.gif" alt=""></div>
+            </div>
+            <div class="col-3">
+                <div class="info_img"><img src="images/Menu Cards/roseland.png" alt="" id="veggies"></div>
+                <br><br>
+                <div class="content">
+                    Looking for a quick healthy alternative? Say no more. Let-tuce
+                    take care of your hunger and your health! Our veggies are locally sourced from Roseland
+                    Produce. Looking to work on your Buddha belly? Try our Buddha Bowl! Full of all the
+                    treasures of nature!
+                </div>
+            </div>
+            <div class="col-3">&nbsp;</div>
+        </div>
+
+        <div class="row">
+            <div class="col-12"><small><a href="#logo">Back To Top</a></small></div>
+        </div>
+        <hr width="50%">
+
+    </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="map">
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="393" height="248" id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                </div>
+            </div>
+            <div>
+                <h3>Address:</h3>
+                <p>
+                    <ion-icon class="social-icon" name="location-outline"></ion-icon>
+                    108 University Ave, Waterloo, ON N2J 2W2
+                    <br />
+                    <ion-icon class="social-icon" name="call-outline"></ion-icon>
+                    +1 5197485131
+                </p>
+            </div>
+        </div>
+        <div class="social">
+            <h3>Social accounts:</h3>
+            <a href="#instagram">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="logo-instagram"></ion-icon> Instagram
+                </div>
+            </a>
+            <a href="#facebook">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="logo-facebook"></ion-icon> Facebook
+                </div>
+            </a>
+            <a href="#email">
+                <div class="social-item">
+                    <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+                </div>
+            </a>
+        </div>
+        <div class="page-links">
+            <h3>Explore:</h3>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#about us">About Us</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="./navbar.js" ></script>
+</body>
+
+</html>

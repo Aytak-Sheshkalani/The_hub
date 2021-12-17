@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="eventstyles.css" />
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>The Hub Cafe and Lounge</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="home.html"><img src="images/logo.png" alt="logo" id="logo" /></a>
+      <div class="topnav" id="topNav">
+        <a href="menu.html">MENU</a>
+        <a href="events.html" class="active">EVENTS</a>
+        <a href="preorder.html">PRE-ORDER</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="javascript:void(0);" class="icon" onclick="handleBurger()">
+          <div id="nav-icon2">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+      </div>      
+      <!-- <ol type="a">
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="events.html">EVENTS</a></li>
+        <li><a href="preorder.html">PRE-ORDER</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ol> -->
+    </nav>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">Events</h1>
+      </div>
+    </div>
+
+    <div class="items-container">
+      <div class="flex-container">
+        <div>
+          <img
+            src="images/COMEDY NIGHT.jpg"
+            id="events-image-left"
+            class="img-left"
+            alt="COMEDY NIGHT"
+            width="250"
+            height="250"
+          />
+        </div>
+        <div>
+          <h1 class="img1-p">COMEDY NIGHT</h1>
+          <p class="img1-p">
+            We Host a local comedian to do some stand up at our restaurant.<br />
+            ONE MORE THING, You can perform if you think you are good at it!
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div>
+          <h1 class="img2-p">KARAOKE</h1>
+          <p class="img2-p">
+            A lots of karaoke events.<br />
+            Try to make this one a little more unique to stand out.<br />
+            We put on a karaoke competition for a two hours once a week with the
+            winner getting their meal paid for.
+          </p>
+        </div>
+        <div>
+          <img
+            src="images/KARAOKE.jpg"
+            id="events-image-right"
+            class="img-right"
+            alt="KARAOKE"
+            width="250"
+            height="250"
+          />
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div>
+          <img
+            src="images/SPORTS ARENA.jpg"
+            id="events-image-left"
+            class="img-left"
+            alt="SPORTS ARENA"
+            width="250"
+            height="250"
+          />
+        </div>
+        <div>
+          <h1 class="img3-p">SPORTS ARENA</h1>
+          <p class="img3-p">
+            Go fanatical for an evening to support local sports teams. You can
+            reserve your table a day before your favorite teams' game.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex-container">
+        <div>
+          <h1 class="img4-p">BUY ONE, GET ONE</h1>
+          <p class="img4-p">
+            Offer buy one get one free appetizers or desserts on your choice
+            every Tuesday nights after 6 pm.<br />
+            It’s a great deal, Don't miss out.<br />
+            Don't forget to bring your Conestoga ID.
+          </p>
+        </div>
+        <div>
+          <img
+            src="images/BUY ONE, GET ONE.jpg"
+            id="events-image-right"
+            class="img-right"
+            alt="BUY ONE, GET ONE"
+            width="250"
+            height="250"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="map">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe
+              width="393"
+              height="248"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=108%20University%20Ave,%20Waterloo,%20ON%20N2J%202W2,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <h3>Address:</h3>
+          <p>
+            <ion-icon class="social-icon" name="location-outline"></ion-icon>
+            108 University Ave, Waterloo, ON N2J 2W2
+            <br />
+            <ion-icon class="social-icon" name="call-outline"></ion-icon>
+            +1 5197485131
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <h3>Social accounts:</h3>
+        <a href="#instagram">
+          <div class="social-item">
+            <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            Instagram
+          </div>
+        </a>
+        <a href="#facebook">
+          <div class="social-item">
+            <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            Facebook
+          </div>
+        </a>
+        <a href="#email">
+          <div class="social-item">
+            <ion-icon class="social-icon" name="mail-outline"></ion-icon> Email
+          </div>
+        </a>
+      </div>
+      <div class="page-links">
+        <h3>Explore:</h3>
+        <ul>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#about us">About Us</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./navbar.js" ></script>
+  </body>
+</html>
